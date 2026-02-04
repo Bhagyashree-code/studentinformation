@@ -1,190 +1,94 @@
 # studentinformation
-Student registration and information portal using PHP and MySQL
-# studentinformation
-Student registration and information portal using PHP & MySQL
+Student registration and information portal using PHP, MySQL
 
-This web-based application system is a Student Registration System for university students as well as administrators. It allows students to register for semesters in various courses, view and edit their details, and enables admins to manage all student records efficiently. By replacing manual paperwork, this system maximizes work efficiency while remaining easy to understand and use.
-
-The system contains a relational database with:
-- List of courses with their maximum limits
-- Student details
-- Hostel details
-
----
-
-## **Running this project locally**
-
-1. Install the latest version of **XAMPP** on your PC.
-2. Run **Apache** and **MySQL** from the XAMPP control panel. Fix any port conflicts if they arise.
-3. Paste the `studentinformation-master` folder under `xampp/htdocs/`.
-4. Open `localhost/phpMyAdmin` and create a new database named `student`.
-   - Default user: `root`
-   - Password: *(leave empty)*
-5. Import the provided `.sql` file into the database. Ensure there are no errors.
-6. Open [http://localhost/studentinformation-master](http://localhost/studentinformation-master) in your browser.
-7. Example login credentials:
-   - **Student:** enrolmentid - `GH1234`, password - `12345678`
-   - **Admin:** username - `0000`, password - `amu_reg`
-
----
-
-## **Features & Improvements**
-
-- Fixed styling bugs in the UI
-- Improved student details form
-- Admin login table added in the database (not hardcoded)
-- Student photo added in generated PDFs
-- Image details stored in a database table for mapping
-- Admin can filter student lists by year, class, division, gender, caste, category, religion, and age
-- Export and print student lists
-
----
-
-## **System Overview**
-
-**Actors:**  
-- **Student:** Registers, views, and updates personal and academic information.  
-- **Admin:** Manages student registrations, updates, and course data.
-
-**Database:**  
-- Relational tables for courses, students, hostel details, and images
-
-**Technology Stack:**  
-- PHP  
-- MySQL  
-- HTML/CSS  
-- Bootstrap
-
----
-
-### Screenshots / Interfaces
-
-*(Add your screenshots in the `/images` folder and link here)*
-
-- Student registration form
-- Student update form
-- Admin dashboard
-- Search student functionality
-- Export & print options
-
----
-
-### ER Diagram
-
-*(Add ER diagram image here if available)*
-
----
-
-## **Notes**
-
-- Make sure Apache and MySQL are running before using the system.
-- This system is designed for **Windows OS**
-- 
-# Student Information System
-
-Student registration and information portal using PHP and MySQL.
-
-This web-based application system is designed for students of the university as well as the administrator. Students can register for semesters and courses, view and edit their details. Admin can view, edit, add, and remove students, as well as manage courses efficiently.
-
-The system contains a relational database with:
-- List of courses with maximum limit
-- Student details
-- Hostel details
-
----
-
-## Features
-
-- Student registration and login
-- Admin login to manage students
-- Upload student photo
-- View and edit student information
-- Generate PDF confirmation of registration
-- Search students by year, course, gender, category, religion, and age
-- Export student list to Excel
-
----
-
-## Installation
-
-1. Install the latest version of **XAMPP** on your PC.
-2. Start **Apache** and **MySQL** from XAMPP Control Panel.
-3. Paste the `studentinformation-master` folder into `xampp/htdocs`.
-4. Open **localhost/phpMyAdmin**, create a new database named `student`.
-5. Import the provided `.sql` file into the database.
-6. Open the project in your browser: [http://localhost/studentinformation-master](http://localhost/studentinformation-master)
-7. Use example credentials:
-   - **Student:**  
-     - Enrollment ID: `GH1234`  
-     - Password: `12345678`
-   - **Admin:**  
-     - Username: `0000`  
-     - Password: `amu_reg`
-
----
-
-## Screenshots
-
-**Home Page / Student Registration**  
-![Home Page](images/1.png)
-
-**Student Details Form**  
-![Student Form](images/4.png)
-
-**Student Confirmation PDF**  
-![Confirmation PDF](images/5.png)
-
-**Student Login Page**  
-![Student Login](images/7.jpg)
-
-**Student Dashboard / Details**  
-![Student Dashboard](images/8.png)
-
-**Admin Dashboard**  
-![Admin Page](images/9.png)
-
-**Student List and Search**  
-![Student List](images/10.png)
-
-**View/Edit Student Details**  
-![Edit Student](images/11.png)
-
-**Admin Add Student Form**  
-![Admin Add](images/12.png)
-
-**ER Diagram**  
-![ER Diagram](images/13.png)
-
-> Replace `images/*.png` and `images/*.jpg` with your actual screenshots in the `images/` folder.
-
----
-
-## Database Structure
-
-- **Student Table:** `student_details`
-- **Courses Table:** `course`
-- **Hostel Table:** `hostel_details`
-- **Admin Table:** `admin` (for admin login)
-
----
-
-## Improvements / Custom Features
-
-1. Styling bugs removed
-2. Improved student details form
-3. Admin login stored in database
-4. Student photo added in PDF confirmation
-5. Image mapping table for better organization
-6. Admin can generate year/class/division/gender/caste/category/religion/age-wise student lists
-7. Print and export options for admins
-
----
-
-## Author
-
-Bhagyashree N  
-Email: bhagyashree3598@gmail.com
+This web based application system will be a Student Registration System for a student of the university as well as the administrator of the application. This system will be designed to register students for the particular semesters in the various courses offered by the University. It shall provide a one stop place for students to register, view and edit their details as well as the admin for viewing all students in the course and edit student and course information, which would have been much difficult with paper work and files. By maximizing the student’s and admin’s work efficiency, the system will meet the university’s needs and requirements while remaining easy to understand and use.
+The system also contains a relational database containing a list of courses with their maximum limit, All student details, and hostel details.
 
 
+For running this project on your PC and local setup, follow following steps-
+1.	Install latest version of xampp on your PC.
+2.	Run apache and mysql from its control panel. If there is any port clash issue, resolve it so that its runs without errors.
+3.	Paste this folder under your xampp/htdocs folder
+4.	Open localhost/phpMyAdmin, create a new database with the name student. Check user for the database- on localhost, username root and no password.
+5.	Now import the given .sql file in the database. Make sure it’s imported without errors.
+6.	Open localhost/studentinformation, the homepage should be visible. Use the example student login details- enrolmentid- GH1234 and password-12345678 to check the update form. Admin login details- username- 0000 password-amu_reg
+7.	If you have any issues, please contact me.
+
+Improvements needed to this project and Extra features to be implemented by me for my university-
+1. Styling bugs removed.
+2. Styling of the student details form is improved as shown in the Software Design Document.
+3. Admin login table created in the database instead of hardcoding in php.
+4. Added student photo in the generated pdf as well
+5. Add image details in the image table of the database for better mapping
+6. Admin login added for- Year wise, class wise, division wise, Gender wise, cast wise, category wise, religion wise, 
+                       age wise student list created and maintained using this portal, print and export to excel.
+
+For all other details please check the SRS and SDD documents.
+
+Thanks!
 
 
+Overall Description
+
+2.1	Product perspective
+
+Figure 1 - System Environment use case
+
+![](images/1.png)
+
+	The Student Registration System has two active actors and one cooperating system. 
+The student can register to a course for a particular semester, view and update his/her information through this system. The admin can view all students enrolled in a particular course of the University for the particular semester, add or remove and student/s, search any student and view and update his/her details. There is a link to the (existing) Courses table in the database.
+
+2.1	Product Functions
+Context diagram –
+
+![](images/2.png)
+
+2.2	Operating Environment
+The application should run on any machine with Windows OS.
+2.3	Design and Implementation Constraints
+It is required to implement this web application on Php and mysql database along with an appealing user interface and should be cross browser compatible
+3.	External Interface Requirements
+3.1	User Interfaces
+The GUI interface below will each give an idea of the requirements on each interface of the user and messages to display
+
+![](images/3.png)
+
+An interface for signing up into the system for a student. This should be the home page. It should take inputs as shown in the figure
+
+![](images/4.png)
+
+A next interface to complete registering other details and registering in a sem of a course.
+After successfully completing registration, the system should open up a pdf with confirmation message and other details.
+
+ ![](images/5.png)
+ 
+An interface for logging into the system for registered students using enrolment id and password
+
+![](images/7.jpg)
+
+After logging into the system, the student should be able to view his/her details and be able to edit the information.
+
+ ![](images/8.png)
+ 
+This is the page for the admin. The admin should be able to view all the enrolled students in a particular course for the particular semester.
+
+ ![](images/9.png)
+ 
+The result can be shown in this way.
+
+ ![](images/10.png)
+ 
+The interface for the admin to search and view details of a particular student. After this the admin should be able to similarly be able to edit the student’s details.
+
+ ![](images/11.png)
+ 
+An interface is to be provided to the admin to register a student similarly.
+
+![](images/12.png)
+
+Admin should also be able to delete a student from the system in case of fraudulent or mistaken registrations/sign ups
+ER diagram of the students' data stored in the Database is-
+
+ ![](images/13.png)
+ 
