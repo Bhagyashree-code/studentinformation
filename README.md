@@ -1,105 +1,80 @@
-# studentinformation
-Student registration and information portal using PHP & MySQL
+# Student Information Portal
 
-This web-based application system is a Student Registration System for university students as well as administrators. It allows students to register for semesters in various courses, view and edit their details, and enables admins to manage all student records efficiently. By replacing manual paperwork, this system maximizes work efficiency while remaining easy to understand and use.
+This is a **Student Registration and Information System** using PHP and MySQL.
 
-The system contains a relational database with:
-- List of courses with their maximum limits
-- Student details
-- Hostel details
+This web-based application allows students to register for semesters, view and edit their details. The administrator can view all students, update information, and manage courses.  
 
 ---
 
-## **Running this project locally**
+## Features
 
-1. Install the latest version of **XAMPP** on your PC.
-2. Run **Apache** and **MySQL** from the XAMPP control panel. Fix any port conflicts if they arise.
-3. Paste the `studentinformation-master` folder under `xampp/htdocs/`.
-4. Open `localhost/phpMyAdmin` and create a new database named `student`.
-   - Default user: `root`
-   - Password: *(leave empty)*
-5. Import the provided `.sql` file into the database. Ensure there are no errors.
-6. Open [http://localhost/studentinformation-master](http://localhost/studentinformation-master) in your browser.
-7. Example login credentials:
-   - **Student:** enrolmentid - `GH1234`, password - `12345678`
-   - **Admin:** username - `0000`, password - `amu_reg`
+- Student registration and profile management
+- Admin can add, edit, and delete student records
+- Course management
+- PDF generation of student details
+- Search and filter students by year, course, gender, etc.
+- Export student lists to Excel
 
 ---
 
-## **Features & Improvements**
+## Installation
 
-- Fixed styling bugs in the UI
-- Improved student details form
-- Admin login table added in the database (not hardcoded)
-- Student photo added in generated PDFs
-- Image details stored in a database table for mapping
-- Admin can filter student lists by year, class, division, gender, caste, category, religion, and age
-- Export and print student lists
-
----
-
-## **System Overview**
-
-**Actors:**  
-- **Student:** Registers, views, and updates personal and academic information.  
-- **Admin:** Manages student registrations, updates, and course data.
-
-**Database:**  
-- Relational tables for courses, students, hostel details, and images
-
-**Technology Stack:**  
-- PHP  
-- MySQL  
-- HTML/CSS  
-- Bootstrap
+1. Install [XAMPP](https://www.apachefriends.org/download.html) on your PC.
+2. Start **Apache** and **MySQL** from XAMPP Control Panel.
+3. Copy the project folder (`studentinformation-master`) into `C:\xampp\htdocs\`.
+4. Open **phpMyAdmin** (`http://localhost/phpmyadmin`) and create a database named `student`.
+5. Import the provided `.sql` file into the database.
+6. Open the project in a browser: `http://localhost/studentinformation-master/`
+7. Student login example:
+   - Enrollment ID: `GH1234`
+   - Password: `12345678`
+8. Admin login example:
+   - Username: `0000`
+   - Password: `amu_reg`
 
 ---
 
-### Screenshots / Interfaces (Placeholders)
+## Screenshots
 
-**System Environment Use Case:**  
-![System Environment](images/1.png)
+**Home Page / Registration Form**  
+![1.png](1.png)
 
-**Context Diagram:**  
-![Context Diagram](images/2.png)
+**Student Details Form**  
+![4.png](4.png)
 
-**Sign-up / Home Page:**  
-![Sign-up](images/3.png)
+**Registration Confirmation (PDF)**  
+![5.png](5.png)
 
-**Registration Form:**  
-![Registration Form](images/4.png)
+**Student Login**  
+![7.jpg](7.jpg)
 
-**Confirmation PDF:**  
-![Confirmation PDF](images/5.png)
+**Student Dashboard**  
+![8.png](8.png)
 
-**Student Login Page:**  
-![Student Login](images/7.jpg)
+**Admin Dashboard**  
+![9.png](9.png)
 
-**Student Dashboard:**  
-![Student Dashboard](images/8.png)
+**Admin Search Student**  
+![11.png](11.png)
 
-**Admin Dashboard:**  
-![Admin Dashboard](images/9.png)
-
-**Search & View Student:**  
-![Search Student](images/10.png)
-![Edit Student](images/11.png)
-
-**Admin Add Student:**  
-![Admin Add Student](images/12.png)
-
-**ER Diagram:**  
-![ER Diagram](images/13.png)
-
-> *Note: Images not included yet. Add screenshots in the `images/` folder later.*
+**Admin Add/Delete Student**  
+![12.png](12.png)
 
 ---
 
-## **Notes**
+## Database Structure
 
-- Make sure Apache and MySQL are running before using the system.
-- This system is designed for **Windows OS**.
+- **student_details** – stores student personal and course details
+- **course** – stores course information
+- **hostel** – stores hostel details
+- **admin** – stores admin login credentials
+
+**ER Diagram**  
+![13.png](13.png)
 
 ---
 
-**Thanks!**
+## Author
+
+**Bhagyashree N**  
+Email: bhagyashree3598@gmail.com
